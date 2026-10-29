@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fffaf0">
+<title>WellQ Studios • One more little go.</title>
+<meta name="description" content="A little mischief. A lot of play. WellQ Studios is a woman founded mobile game studio in Limburg, Netherlands, creating hypercasual games.">
+<meta property="og:title" content="WellQ Studios • One more little go."><meta property="og:description" content="A little mischief. A lot of play. Meet WellQ Studios."><meta property="og:type" content="website">
+<link rel="icon" href="assets/cat.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@400;700&family=Knewave&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script defer src="game.js"></script><script defer src="script.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+<a class="brand" href="#" aria-label="WellQ Studios home"><img src="assets/cat.svg" alt="" width="48" height="48"><span>WellQ<span class="brand-sub">S T U D I O S</span></span></a>
+<nav id="nav" aria-label="Main navigation"><a href="#studio">Meet the studio</a><a href="#playground">A little play</a><a class="nav-hello" href="#hello">Say hello <span aria-hidden="true">↗</span></a></nav>
+<button class="menu" aria-controls="nav" aria-expanded="false" aria-label="Open menu"><span></span><span></span></button>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-heading">
+<img class="hero-illustration" src="assets/playground.jpg" alt="A scruffy cat floats beneath a smiling yellow balloon while a purple bird balances on a wobbly tower of colored blocks." width="1536" height="1024" fetchpriority="high">
+<div class="hero-copy"><p class="eyebrow">A LITTLE MISCHIEF. A LOT OF PLAY.</p><h1 id="hero-heading"><span>ONE MORE</span><span class="orange">LITTLE</span><span>GO<span class="orange">.</span></span></h1><p class="hero-intro">Small games. Silly moments.<br>That lovely feeling of “again!”</p><a class="button" href="#playground">Come out and play <svg viewBox="0 0 28 20" aria-hidden="true"><path d="M2 10h22M17 3l8 7-8 7"/></svg></a><span class="hero-footnote">Made for the fun of it.</span></div>
+<p class="mobile-art-note" aria-hidden="true">Curiosity<br>looks good<br>on you.</p>
+<div class="hero-bottom"><span>INDEPENDENT MINDS. PLAYFUL THUMBS.</span><a href="#studio" aria-label="Meet the studio below">↓</a><span>HELLO FROM THE NETHERLANDS</span></div>
+</section>
+<section class="studio section-wrap" id="studio" aria-labelledby="studio-heading">
+<div class="studio-title"><p class="eyebrow">01 / THE STUDIO</p><h2 id="studio-heading">SERIOUS<br>ABOUT<br><span class="orange">SILLY.</span></h2><svg class="pencil-arrow" viewBox="0 0 180 80" aria-hidden="true"><path d="M8 20q43 50 119 17t29 13M145 35l19 8-1-19"/></svg></div>
+<div class="studio-story"><span class="handwritten">Good things start with a little curiosity.</span><h3>We’re WellQ Studios.<br>A small studio with a playful streak.</h3><p>Founded by a woman with a head full of ideas, we’re a mobile game studio based in Limburg, Netherlands.</p><p>Our focus is hypercasual: simple ideas you understand in a moment, satisfying little challenges, and plenty of personality. Games that fit into your day and leave you smiling.</p><p>We’re at the beginning of our story.<br>There’s a lot of fun ahead.</p><div class="studio-signature"><img src="assets/cat.svg" alt="" width="33" height="33"><span>Stay curious. Play a little.</span></div></div>
+</section>
+<div class="play-strip" aria-label="Tap. Smile. Repeat."><span>TAP.</span><span class="strip-star" aria-hidden="true">✳</span><span>SMILE.</span><span class="strip-star" aria-hidden="true">✳</span><span>REPEAT.</span><span class="strip-star" aria-hidden="true">✳</span><span class="strip-again" aria-hidden="true">TAP.</span></div>
+<section class="playground" id="playground" aria-labelledby="playground-heading"><div class="playground-inner section-wrap">
+<div class="playground-copy"><p class="eyebrow">02 / THE PLAYGROUND</p><h2 id="playground-heading">TINY IDEA.<br><span class="orange">INSTANT</span><br>FUN.</h2><p>You don’t need a rulebook.<br>Just a curious finger.</p><p>One of these cats is doing its own thing.<br>Can you spot the odd one?</p><span class="handwritten toy-invitation">Go on. Have a little go.</span><svg class="toy-arrow" viewBox="0 0 120 60" aria-hidden="true"><path d="M6 22q44-25 100 15M89 18l19 21-28 3"/></svg><p class="toy-disclaimer">A little website experiment.<br>Our studio games are still taking shape.</p></div>
+<div class="toy-surround"><div class="toy-label">FRESH FROM THE PLAYGROUND</div><div class="toy" aria-label="Odd one meowt game">
+<div class="toy-top"><span class="toy-edition">NO. 001</span><span class="toy-counter" id="counter">1 / 5</span></div>
+<h3>ODD ONE<br><span>MEOWT!</span></h3><p class="toy-description" id="game-instruction">One cat is different. Give it a tap.</p>
+<div class="cats" id="cats" role="group" aria-labelledby="game-instruction"></div>
+<div class="toy-result" id="toy-result" hidden><img src="assets/cat.svg" alt="A wide eyed cat" width="100" height="100"><h4>PAWSOME.</h4><p>Five little moments of joy.<br>Fancy another go?</p><button class="button" id="again">Play again <span aria-hidden="true">↻</span></button></div>
+<div class="toy-bottom"><span class="game-message" id="game-message" role="status" aria-live="polite">Trust your curious side.</span><button class="reset" id="reset" aria-label="Start the cat game again">↻</button></div>
+</div><span class="toy-caption">No downloads. No fuss. Just a little fun.</span></div>
+</div></section>
+<section class="hello" id="hello" aria-labelledby="hello-heading"><div class="hello-inner section-wrap"><div class="hello-copy"><p class="eyebrow">03 / SAY HELLO</p><h2 id="hello-heading">GOT A LITTLE<br><span>“WHAT IF?”</span></h2><p>An idea, a collaboration, or a simple hello.<br>We’d love to see what happens next.</p><a class="email" href="mailto:info@wellq.io">info@wellq.io <span aria-hidden="true">↗</span></a><div class="copy-row"><button id="copy-email">Copy email address</button><span id="copy-status" role="status"></span></div></div><div class="hello-drawing" aria-hidden="true"><span class="handwritten">Our inbox is a friendly place.</span><div class="cat-post"><img src="assets/cat.svg" alt="" width="180" height="180"><svg viewBox="0 0 260 190"><path class="envelope-paper" d="m14 27 230-9-7 157-218-7Z"/><path d="m15 28 118 96L244 18M19 169l81-72m138 78-73-79"/><path class="heart" d="M130 147q-26-20-22-29 6-14 20-2 15-15 22-2 9 13-20 33Z"/></svg></div><span class="hello-scribbles">× × ×</span></div></div></section>
+</main>
+<footer class="footer section-wrap"><a class="brand" href="#" aria-label="WellQ Studios home"><img src="assets/cat.svg" alt="" width="39" height="39"><span>WellQ<span class="brand-sub">S T U D I O S</span></span></a><p>Limburg / Netherlands<br><a href="mailto:info@wellq.io">info@wellq.io</a></p><p>© <span id="year">2026</span> WellQ Studios<br><span class="footer-domain">wellq.io</span></p><a class="back-top" href="#" aria-label="Back to top">↑</a></footer>
+<nav class="legal-footer section-wrap" aria-label="Legal information"><a href="data-protection.html">Data Protection</a><a href="privacy.html">Privacy Notice</a><a href="terms.html">Terms of Service</a></nav>
+</body></html>
